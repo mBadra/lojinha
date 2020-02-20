@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TopnavComponent from "../components/TopnavComponent";
+import TopnavComponent from "../components/Header/TopnavComponent";
 import CartComponent from "../components/Cart/CartComponent";
 
 export default class Cart extends Component {

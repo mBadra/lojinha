@@ -1,5 +1,5 @@
 import React from "react";
-import TopnavComponent from "../components/TopnavComponent";
+import TopnavComponent from "../components/Header/TopnavComponent";
 import DetailsComponent from "../components/Product/DetailsComponent";
 
 const Details = () => (

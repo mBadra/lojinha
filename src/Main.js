@@ -8,17 +8,19 @@ import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Default from "./pages/Default";
 import Details from "./pages/Details";
+import Login from "./pages/Login";
 import ModalComponent from "./components/Product/ModalComponent";
 import FooterComponent from "./components/FooterComponent";
 
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path='/' component={Home} />
-      <Route path='/About' component={About} />
-      <Route path='/Products' component={Products} />
-      <Route path='/Cart' component={Cart} />
-      <Route path='/Details' component={Details} />
+      <Route exact path="/" component={Home} />
+      <Route path="/About" component={About} />
+      <Route path="/Products" component={Products} />
+      <Route path="/Cart" component={Cart} />
+      <Route path="/Details" component={Details} />
+      <Route path="/Login" component={Login} />
       <Route component={Default} />
     </Switch>
     <ModalComponent />

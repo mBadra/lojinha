@@ -1,13 +1,13 @@
 import React from "react";
-import TopnavComponent from "../components/TopnavComponent";
+import TopnavComponent from "../components/Header/TopnavComponent";
 import AboutComponent from "../components/About/AboutComponent";
 import Title from "../components/Title";
 
 const About = () => (
   <div>
     <TopnavComponent />
-    <div className='p-1'>
-      <Title name='SOBRE' title='NÓS' />
+    <div className="p-1">
+      <Title name="SOBRE" title="NÓS" />
       <AboutComponent />
     </div>
   </div>

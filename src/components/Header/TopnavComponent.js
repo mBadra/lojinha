@@ -10,26 +10,29 @@ import {
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import Login from "./LoginHeader";
 
 export default class NewTopNavComponent extends Component {
   render() {
     return (
-      <div className='text-topnav'>
-        <Navbar className='bg-topnav' expand='lg' bg='light'>
-          <NavLink to='/'>
-            <Navbar.Brand className='logo'>Lojinha Uniamerica</Navbar.Brand>
+      <div className="text-topnav">
+        <Navbar className="bg-topnav" expand="lg" bg="light">
+          <NavLink to="/">
+            <Navbar.Brand className="logo">Lojinha Uniamerica</Navbar.Brand>
           </NavLink>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
-          <Navbar.Collapse id='basic-navbar-nav'>
-            <Nav className='ml-auto'>
-              <div className='mx-lg-2'>
-                <NavLink to='/Products'>Produtos</NavLink>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="ml-auto">
+              <div className="mx-lg-2">
+                <NavLink to="/Products">Produtos</NavLink>
               </div>
-              <div className='mx-lg-2'>
-                <NavLink to='/About'>Sobre</NavLink>
+              <div className="mx-lg-2">
+                <NavLink to="/About">Sobre</NavLink>
               </div>
-              <div className='mx-lg-2'>
-                <NavLink to='/Cart'><FontAwesomeIcon icon={faShoppingCart}/></NavLink>
+              <div className="mx-lg-2">
+                <NavLink to="/Cart">
+                  <FontAwesomeIcon icon={faShoppingCart} />
+                </NavLink>
               </div>
 
               {/*
@@ -50,13 +53,16 @@ export default class NewTopNavComponent extends Component {
             </Nav>
             <Form inline>
               <FormControl
-                type='text'
-                placeholder='Buscar'
-                className='mr-sm-2'
+                type="text"
+                placeholder="Buscar"
+                className="mr-sm-2"
               />
-              <Button variant='success'><FontAwesomeIcon icon={faSearch}/></Button>
+              <Button variant="success">
+                <FontAwesomeIcon icon={faSearch} />
+              </Button>
             </Form>
           </Navbar.Collapse>
+          <Login></Login>
         </Navbar>
       </div>
     );
