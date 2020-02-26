@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow&display=swap");
 $bg: url("../assets/banner1.png");
+$login: url("../assets/login.jpg");
 $primary-color: #63b446;
 $secundary-color: #001e44;
 $white-color: #ffff;
@@ -376,14 +377,79 @@ li {
 }
 
 .LogIn-Content {
-  color: $primary-color;
+  text-align: center;
+  background-color: rgba($color: #fff, $alpha: 0.5);
 }
 
-.LogIn-Content p {
-  color: $white-color;
-  color: #0026ff !important;
-  text-decoration: underline;
+.logIn {
+  margin-top: -5vh;
+  margin-bottom: -5vh;
+  background: $login no-repeat 100% 20%;
 }
+
+.register-form {
+  width: 100%;
+  margin-top: 5vh;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.form-group:last-child {
+  margin-bottom: 0px;
+}
+
+input {
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid #999;
+  padding: 6px 10px;
+  font-family: Poppins;
+  box-sizing: border-box;
+  background-color: rgba($color: #fff, $alpha: 0.0);
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(168, 168, 168);
+  background-color: rgba($color: #000000, $alpha: 0.0);
+}
+
+input:focus {
+  outline: none;
+  background-color: rgba($color: #000000, $alpha: 0);
+  border-bottom: 1px solid #222;
+}
+
+.agree-term {
+  display: inline-block;
+  width: auto;
+}
+
+label {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  color: #222;
+}
+
+.label-agree-term {
+  position: relative;
+  top: 0%;
+  transform: translateY(0);
+  -moz-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -o-transform: translateY(0);
+  -ms-transform: translateY(0);
+}
+
 
 /*--------------------------------------------------------*/
 
