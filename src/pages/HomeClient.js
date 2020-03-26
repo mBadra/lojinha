@@ -1,12 +1,13 @@
 import React from "react";
 import TopnavComponent from "../components/Header/TopnavComponent";
-import LoginComponent from "../components/Login/LoginComponent";
 
-const Login = () => (
+const HomeClient = () => (
   <div>
     <TopnavComponent />
-    <LoginComponent />
+    <div className="top-space">
+      <h1>TESTE</h1>
+    </div>
   </div>
 );
 
-export default Login;
+export default HomeClient;

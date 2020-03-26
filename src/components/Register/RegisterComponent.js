@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
-export default class LoginComponent extends Component {
+export default class RegisterComponent extends Component {
   render() {
     return (
       <div className="logIn">

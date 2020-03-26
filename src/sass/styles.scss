@@ -244,6 +244,7 @@ li {
   .card-img-top {
     padding: 5px;
     transition: all 0.5s linear;
+
   }
 
   .img-container:hover .card-img-top {
@@ -448,6 +449,17 @@ label {
   -webkit-transform: translateY(0);
   -o-transform: translateY(0);
   -ms-transform: translateY(0);
+}
+
+.Client_Carousel {
+  height: 500px;
+  display: flex;
+  background-color: black;
+}
+
+.Client_Carousel_Img {
+  height: 500px;
+  width: 80%;
 }
 
 

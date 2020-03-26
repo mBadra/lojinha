@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function LoginHeader() {
   return (
     <div>
-      <NavLink to="/Login">Login Header</NavLink>
+      <NavLink to="/Register">Login Header</NavLink>
     </div>
   );
 }

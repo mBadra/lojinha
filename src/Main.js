@@ -3,24 +3,26 @@ import React from "react";
 // Importanto o component <Switch /> e <Route /> da nossa Lib de rotas
 import { Switch, Route } from "react-router-dom";
 import About from "./pages/About";
-import Home from "./pages/Home";
+import LandingPage from "./pages/LandingPage";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Default from "./pages/Default";
+import HomeClient from "./pages/HomeClient";
 import Details from "./pages/Details";
-import Login from "./pages/Login";
+import Register from "./pages/Register";
 import ModalComponent from "./components/Product/ModalComponent";
 import FooterComponent from "./components/FooterComponent";
 
 const Main = () => (
   <main>
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route exact path="/" component={LandingPage} />
       <Route path="/About" component={About} />
       <Route path="/Products" component={Products} />
       <Route path="/Cart" component={Cart} />
       <Route path="/Details" component={Details} />
-      <Route path="/Login" component={Login} />
+      <Route path="/Register" component={Register} />
+      <Route path="/HomeClient" component={HomeClient} />
       <Route component={Default} />
     </Switch>
     <ModalComponent />

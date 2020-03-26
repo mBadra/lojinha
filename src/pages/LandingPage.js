@@ -1,11 +1,11 @@
 import React from "react";
 import TopnavComponent from "../components/Header/TopnavComponent";
-import TextomeioComponent from "../components/Home/TextomeioComponent";
-import FeaturedComponent from "../components/Home/FeaturedComponent";
+import TextomeioComponent from "../components/LandingPage/TextomeioComponent";
+import FeaturedComponent from "../components/LandingPage/FeaturedComponent";
 import PromotionComponent from "../components/PromotionComponent";
 import OpinionComponent from "../components/OpinionComponent";
 
-const Home = () => (
+const LandingPage = () => (
   <div>
     <TopnavComponent />
     <TextomeioComponent />
@@ -15,4 +15,4 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+export default LandingPage;
