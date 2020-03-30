@@ -8,6 +8,7 @@ import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 import Default from "./pages/Default";
 import HomeClient from "./pages/HomeClient";
+import HomeFornecedor from "./pages/HomeFornecedor";
 import Details from "./pages/Details";
 import Register from "./pages/Register";
 import ModalComponent from "./components/Product/ModalComponent";
@@ -23,6 +24,7 @@ const Main = () => (
       <Route path="/Details" component={Details} />
       <Route path="/Register" component={Register} />
       <Route path="/HomeClient" component={HomeClient} />
+      <Route path="/HomeFornecedor" component={HomeFornecedor} />
       <Route component={Default} />
     </Switch>
     <ModalComponent />
